@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+:root {
+  --user-color:#fe0e3e;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  padding: 5px;
+}
+
+.box {
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.box:nth-child(1) {
+  background-image: url("https://i.pinimg.com/736x/44/d4/47/44d4476aa7055e1abaf575ab0e805de1.jpg");
+}
+.box:nth-child(2) {
+  background-image: url("https://i1-c.pinimg.com/1200x/d5/81/94/d58194af4ad7ecadff187ab38ee73155.jpg");
+}
+.box:nth-child(3) {
+  background-image: url("https://i1-c.pinimg.com/1200x/dd/c5/46/ddc5467cf56441edf937a3c715f596dc.jpg");
+}
+.box:nth-child(4) {
+  background-image: url("https://i.pinimg.com/736x/c9/9e/8d/c99e8da2cf9f88530791033d6f862a54.jpg");
+}
+.box button {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: var(--user-color);
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  transform: scale(2.5);
+  transition: all 0.5s ease;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease;
+}
+.box:hover::after {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.box:hover button {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.contact {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  pointer-events: none;
+}
+
+.x-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: var(--user-color);
+  color: #fff;
+  font-size: 16px;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+.x-btn:hover {
+  cursor: pointer;
+  color: #fe0e3e;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+
+.top-cover {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 180px;
+  background: url("https://i1-c.pinimg.com/1200x/36/ac/38/36ac38cdf706acbe5c790d1ba3078f56.jpg");
+  background-size: cover;
+  inset: 0;
+  transform: translateY(-180px);
+}
+
+.bottom-cover {
+  width: 100%;
+  hight: 220px;
+  background: var(--user-color);
+  transform: translateY(220px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 40px;
+}
+.bottom-cover .name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.bottom-cover .contact-list {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-cover .contact-list span {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.bottom-cover .contact-list span:hover {
+  background: #fff;
+  color: var(--user-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.avatar {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  z-index: 2;
+  top: 100px;
+  left: 140px;
+  background: url("https://i.pinimg.com/736x/44/d4/47/44d4476aa7055e1abaf575ab0e805de1.jpg");
+  background-size: cover;
+}
