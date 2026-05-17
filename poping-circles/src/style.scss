@@ -1,0 +1,127 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+	margin-bottom:-200px;
+	 margin-right: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	background:#E56262;
+	height:400px;
+	width:400px;
+}
+
+.circle-1{
+	position:absolute;
+	background:#fff;
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	top:50%;
+	left:50%;
+	
+	box-shadow: 8px 6px 16px rgba(0, 0, 0, 0.5);
+	
+	animation:jump-1 2s cubic-bezier(.21,.98,.6,.99)  infinite alternate;
+
+
+}
+
+
+.circle-2{
+	position:absolute;
+	background:#fff;
+	height:50px;
+	width:50px;
+	border-radius:50%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	box-shadow: 8px 6px 16px rgba(0, 0, 0, 0.5);
+	animation:jump-2 2s cubic-bezier(.21,.98,.6,.99)  infinite alternate;
+
+
+}
+
+.circle-3{
+	position:absolute;
+	background:#fff;
+	height:25px;
+	width:25px;
+	border-radius:50%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	box-shadow: 8px 6px 16px rgba(0, 0, 0, 0.5);
+	animation:jump-3 2s  cubic-bezier(.21,.98,.6,.99)  infinite alternate;
+
+
+}
+
+@keyframes jump-1{
+	
+	0%,10%{
+		
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform:translate(-50%, -50%) scale(0);
+	
+	}
+		
+		100%{
+				box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+			  transform: translate(-50%, -50%) scale(1);
+				
+	
+}
+		} 
+
+@keyframes jump-2{
+	0%,40%{
+		transform:translate(-50%,-50%) scale(0);
+		
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		
+	}
+		100% {
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: translate(-50%,-50%) scale(1);
+	}
+}
+	
+	
+	
+@keyframes jump-3{
+	0%,70%{
+		transform:translate(-50%,-50%) scale(0);
+		
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		
+	}
+		100% {
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: translate(-50%,-50%) scale(1);
+	}
+}
+	
