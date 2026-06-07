@@ -1,0 +1,90 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+
+
+.center {
+  position:absolute;
+  transform: translate(-50%,-50%);
+	text-align:center;
+}
+
+.frame{
+	height:300px;
+	width:400px;
+	margin-left:-200px;
+	margin-right:-200px;
+	margin-top:-100px;
+	margin-bottom:-50px;
+	top:50%;
+	left:50%;
+	position:absolute; 
+	background:linear-gradient(to top right ,#43389F 0%, #4ec6ca 100%,#ffff 10%);
+	font-family: 'Courier New', 'Courier', sans-serif;
+	
+	color:#ffff;
+	
+}
+
+.number{
+	position:relative;
+	height: 100px;
+  width: 200px;}
+
+
+.one-first{
+	position:absolute;
+	 height: 40px;
+    width: 20px;
+	background: #fff;
+	top:100px;
+	left:180px;
+	z-index:5;
+	border-radius:3px;
+	transform:rotate(45deg);
+	box-shadow: 1px 0 7px 0 rgba(0,0,0,0.5);
+
+}
+
+.one-second{
+	height:100px;
+	width:20px;
+	background:#ffff;
+	top:100px;
+	left:195px;
+	position:absolute;
+	box-shadow: 1px 0 7px 0 rgba(0,0,0,0.5);
+	z-index:10;
+	border-radius:3px;
+	
+}
+
+.first-zero,.second-zero{
+	border:25px solid #ffff;
+	height:50px;
+	width:50px;
+	top:100px;
+	left:210px;
+	position:absolute;
+	border-radius:50%;
+	z-index:7;
+	box-shadow: 1px 0 7px 0 rgba(0,0,0,0.5);
+	
+}
+
+.second-zero{left:290px;z-index:3;}
+
+.days{
+	position:absolute;
+	z-index:15;
+	font-size:80px;
+	top:200px;
+	left:190px;
+	font-weight:bold;
+		
+	
+}
+
+.Challenge{font-size:35px;top:290px;left:160px;position:absolute;font-weight:bold; white-space:nowrap;}
